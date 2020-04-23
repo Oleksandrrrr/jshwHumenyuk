@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Buy List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="external">
+    <div class="leftside">
+        <div class="list">
+            <div class="find">
+                <div class="add">
+                    <div class="findplace">
+                        <input class="findfield" type="text" placeholder="Назва товару" value="">
+                    </div>
+                    <div class="sumbit" data-tooltip="Add">
+                        <div class="text">Додати</div>
+                    </div>
+                </div>
+            </div>
+            <div class="productlist">
+                <div class="prodlist">
+                    <div class="eachproduct">
+                        <div class="change"><input class="changename" type="text" placeholder="Нова назва"></div>
+                        <div class="name">Помідори</div>
+                        <div class="amount">
+                            <div class="minus" data-tooltip="Decrease">-</div>
+                            <div class="amt"></div>
+                            <div class="plus" data-tooltip="Increase">+</div>
+                        </div>
+                        <div class="state">
+                            <div class="del" data-tooltip="Delete">x</div>
+                            <div class="incart" data-tooltip="Bought">Куплено</div>
+                            <div class="notincart" data-tooltip="Not bought">Не куплено</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rightside">
+        <div class="info">
+            <div class="leftover">
+                <div class="leftproducts">
+                   <h3>Залишилося</h3>
+                </div>
+            </div>
+            <div class="productlist">
+                <div class="notbought">
+                    <span class="selectedproduct">
+                        <div class="title">Помідори</div>
+                        <div class="circle"></div>
+                    </span>
+                </div>
+            </div>
+            <div class="bought">
+                <div class="boughtproduct">
+                    <h3>Куплено</h3>
+                </div>
+            </div>
+            <div class="productlist">
+                <div class="boughtproducts">
+                    <span class="selectedproduct">
+                        <div class="title">Помідори</div>
+                        <div class="circle"></div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="holder">
+                <span class="list"><h2>Buy List</h2></span>
+                <span class="author">Made by Oleksandr Humenyuk</span>
+    </div>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/buylist.js"></script>
+</body>
+</html>
