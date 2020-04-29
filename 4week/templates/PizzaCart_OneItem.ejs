@@ -1,0 +1,27 @@
+<div class="pizza-ordered-card">
+    <div class="pizza-header">
+        <h4><%= pizza.title %> (<%= (size=="small_size")?"мала":"велика" %>)</h4>
+        <div class="pizza-attribute">
+            <img src="assets/images/size-icon.svg"><span><%= (size=="small_size")?"мала":"велика" %></span>
+            <img src="assets/images/weight.svg"><span><%= pizza[size].weight %></span><br>
+        </div>
+    </div>
+    <div class="order-text">
+        <div class="price-box">
+            <span class="price label"><%= pizza[size].price %> грн.</span>
+            <button class="btn btn-danger btn-xs btn-circle minus">
+                <i class="glyphicon glyphicon-minus"></i>
+            </button>
+            <span class="label pizza-counter"></span>
+            <button class="btn btn-success btn-xs btn-circle plus">
+                <i class="glyphicon glyphicon-plus"></i>
+            </button>
+            <button class="btn btn-default btn-xs btn-circle btn-delete cancel">
+                <i class="glyphicon glyphicon-remove"></i>
+            </button>
+        </div>
+        <div class="pizza-image">
+            <img src="<%= pizza.icon %>" >
+        </div>
+    </div>
+</div>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Київська піца</title>
+    <!-- Bootsrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- LESS основний файл -->
+    <link rel="stylesheet/less" type="text/css" href="assets/less/main.less" />
+    
+    <!--offline less compiler-->
+    <link rel="stylesheet" type="text/css" href="assets/less/main.css" />
+</head>
+<body>
+
+<div class="top-label">
+    <div class="label-square">PIZZA <span>KMA<span></div>
+    <img src="assets/images/discount.svg">
+</div>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top navigation">
+        <div class="ad-inform">
+            <div class="visible-xs-inline-block visible-sm-inline-block visible-lg-inline-block visible-md-inline-block">(044) 222 5 222</div>
+            <div class="visible-lg-inline-block visible-md-inline-block">24 години/ 7 днів на тиждень</div>
+            <div class="visible-lg-inline-block">Безкоштовна доставка піци</div>
+            <button class="btn btn-warning" type="submit">Увійти</button>
+        </div>
+        <div class="first-header-floor visible-lg-inline-block visible-md-inline-block">
+            Піца
+        </div>
+    </nav>
+
+<div class="container-fluid">
+    <div class="main-content">
+        <div class="pizzas-filters">
+            <div class="title">
+                <h2>
+                <span id="type-title">Усі піци</span>
+                <span class="badge">8</span>
+                </h2>
+            </div>
+            <div class="pizza-type">
+                <ul>
+                    <li><a id="all" class="active" href="#">Усі</a></li>
+                    <li><a id="meat" href="#">М'ясні</a></li>
+                    <li><a id="pineapple" href="#">З ананасом</a></li>
+                    <li><a id="mushroom" href="#">З грибами</a></li>
+                    <li><a id="ocean" href="#">З морепродуктами</a></li>
+                    <li><a id="tomato" href="#">Вега</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row" id="pizza_list">
+            
+        </div>
+
+
+    </div>
+</div>
+
+    <div class="panel-right">
+        <div class="left-block">
+            Замовлення
+            <span class="badge"></span>
+            <span id="cleanup">Очистити замовлення</span>
+        </div>
+        <div class="order-list">
+
+            
+
+        </div>
+        <div class="buy-block">
+            <div class="sum_price_text">
+                СУМА: <span class="sum_price"></span>
+            </div>
+            <button class="btn btn-warning">Замовити</button>
+        </div>
+    </div>
+
+<div class="footer">
+    <p>Pizza.22 - практичний проект в межах курсу JavaScript в Києво-Могилянській Академії</p>
+    <p>Доставка піци не здійснюється</p>
+</div>
+
+<div class="bottom-label">
+    <img src="assets/images/discount.svg">
+    <div class="label-square">
+        ЦЬОГО<br>ТИЖНЯ<br>НА ВСЕ<br><hr>-20%
+    </div>
+</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.min.js"> </script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript"  src="assets/js/main.js"> </script>
+</body>
+</html>

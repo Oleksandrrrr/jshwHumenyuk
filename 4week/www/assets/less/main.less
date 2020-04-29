@@ -1,0 +1,364 @@
+@color_style: #EA862E;
+
+
+
+@import "pizza/pizza-card";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #FFFFF5;
+}
+
+.main-content {
+    margin-top: 100px;
+    margin-right: 320px;
+    margin-left: 20px;
+    min-height: 400px!important;
+}
+
+/**>>>NAVIGATION BAR*/
+.navigation {
+    min-height: 90px;
+    background-color: rgba(0,0,0,0.9);
+    padding-left: 130px;
+    padding-right: 320px;
+    button {
+        float: right;
+        margin-top: -12px;
+        background-color: @color_style;
+    }
+}
+
+
+
+.ad-inform {
+    padding-top: 17px;
+    border-bottom: 1px solid #827F7C;
+    margin-bottom: 8px;
+    :first-child {
+        font-size: 20px;
+    }
+    color: #827F7C;
+    * {
+        padding-right: 15px;
+    }
+}
+
+@media only screen and (max-width: 710px) {
+    .ad-inform {
+        :first-child {
+            font-size: 17px;
+        }
+        button {
+            margin-top: 8px;
+        }
+    }
+
+}
+
+.first-header-floor {
+    color: white;
+    font-size: 17px;
+}
+/*****NAVIGATION BAR*/
+
+/*>>>TOP NAVIGATION (PIZZA'S FILTER)*/
+.pizzas-filters {
+    margin-top: 150px;
+    margin-bottom: 40px;
+    h2{
+        text-align: center;
+    }
+}
+
+.badge {
+    background-color: @color_style;
+}
+
+.pizza-type > ul {
+    list-style: none;
+    margin: 20px 0 10px 0;
+    padding: 0;
+    text-align: center;
+    li {
+        display: inline-block;
+        cursor: pointer;
+        padding-bottom: 20px;
+        a {
+            color: @color_style;
+            text-decoration: none;
+            padding: 10px;
+        }
+        :hover {
+            background-color:#F0EDED;
+            border-radius: 3px;
+        }
+        .active {
+            background-color: @color_style;
+            color: white;
+            border-radius: 4px;
+        }
+    }
+}
+
+//>>MAIN CONTENT
+
+
+
+
+/*TOP NAVIGATION*/
+
+
+
+/*>>>>FOOTER*/
+.footer {
+    padding-top: 50px;
+    border-top: 1px solid #C8C2C2;
+    width: 100%;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-right: 350px;
+    background-color: #fff;
+}
+
+.footer p {
+    text-align: center;
+    color: #918C8C;
+}
+/******FOOTER*/
+
+
+/**BRAND-LABEL*/
+.top-label, .bottom-label {
+    position: fixed;
+    z-index: 999999;
+    text-align: center;
+}
+
+.top-label {
+    top:0;
+    left: 10px;
+}
+
+.top-label img {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.label-square {
+    width: 100px;
+    height: 100px;
+    background-color: #EA862E;
+    margin: 0 0 -6px 0;
+    color: white;
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+.label-square span{
+    font-size: 27px;
+}
+
+.bottom-label {
+    bottom: 0;
+    left: 10px;
+    .label-square{
+        font-size: 13px;
+        font-weight: bolder;
+        height: 120px;
+        hr {
+            border: 1px dashed #825D38;
+            margin-top: 5px;
+            margin-bottom: 7px;
+            width: 80%;
+        }
+    }
+    img {
+        margin-bottom: -6px; 
+    }
+}
+/**>>>BRAND-LABEL*/
+
+/**>>>RIGHT PANEL**/
+
+
+.panel-right {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    z-index: 99999;
+    box-shadow: rgba(0,0,0,.2) -3px 3px 10px;
+
+    .price.label {
+        padding-left: 0!important;
+    }
+
+    .pizza-ordered-card {
+        position: relative;
+        padding: 20px 61px 10px 24px;
+        height: 120px;
+        border-bottom: 1px solid #F2EDED;
+        .btn-circle {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+        }
+
+        .pizza-header {
+            margin-bottom: 10px;
+            h4 {
+                margin: 0;
+                padding: 0;
+                color: @color_style;
+            }
+            .pizza-attribute {
+                img:nth-of-type(2){
+                    margin-left: 20px;
+                }
+                img {
+                    margin-right: 3px;
+                }
+            }
+
+
+        }
+
+        .btn-delete {
+            float: right;
+        }
+
+        .label {
+            color: black;
+            font-size: 14px;
+        }
+
+        .pizza-image {
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            top: 10px;
+            right: -50px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+}
+
+
+.left-block {
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #F2EDED;
+    :last-child {
+        font-size: 11px;
+        font-weight: normal;
+        color: #D6CFCF;
+        cursor: pointer;
+    }
+    .badge {
+        margin-right: 20px;
+    }
+}
+
+
+.order-list {
+    background-color: #FBF6F6;
+    height:456px;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+
+.buy-block {
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+    border-top: 1px solid #F2EDED;
+    button {
+        width: 220px;
+        height: 40px;
+        margin: 40px;
+        margin-top: 20px;
+    }
+
+    .sum_price_text {
+        font-size: 17px;
+        font-weight: bold;
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+/*****RIGHT PANEL**/
+
+/*ORDER PAGE*/
+
+.form-description {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.order-page {
+    margin-top: 150px;
+}
+
+.next-step-button {
+    float: right;
+    margin-bottom: 10px;
+    width: 100px;
+}
+
+/*RIGHT PANEL*/
+.order-mode {
+    .order-text button, #cleanup {
+        display: none;
+    }
+}
+
+.bs-callout {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 15px 30px 15px 15px;
+  border-left: 5px solid @color_style;
+}
+.bs-callout h4 {
+  margin-top: 0;
+}
+.bs-callout p:last-child {
+  margin-bottom: 0;
+}
+.bs-callout code,
+.bs-callout .highlight {
+  background-color: #fff;
+}
+
+.bs-callout-warning {
+  background-color: #F6EFDE;
+  border-color: @color_style;
+  border-radius: 5px;
+}
+
+.telephone-help-block, .address-help-block, .name-help-block {
+    font-size: 11px;
+    color: #F31F1F;
+}
+/*****ORDER PAGE**/
+
+/*****GOOGLE MAP**/
+#googleMap {
+    height: 250px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+/*>>>>GOOGLE MAP<<<<<*/
